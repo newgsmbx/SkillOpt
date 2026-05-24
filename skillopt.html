@@ -458,6 +458,21 @@
       background: #ffffff;
     }
 
+    .comparison-frame {
+      margin-top: 18px;
+      background: #0b1018;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .comparison-frame img {
+      display: block;
+      width: 100%;
+      background: #0b1018;
+    }
+
     .caption {
       padding: 13px 16px;
       color: var(--muted);
@@ -1458,6 +1473,13 @@
           </tbody>
         </table>
       </div>
+
+      <figure class="comparison-frame">
+        <img src="skillopt-assets/main-results-comparison.png" alt="Bar charts comparing SkillOpt with no skill, human skill, LLM skill, Trace2Skill, TextGrad, and GEPA across SearchQA, SpreadsheetBench, OfficeQA, DocVQA, LiveMath, and ALFWorld.">
+        <figcaption class="caption">
+          Method comparison from the project video. Bars report per-benchmark direct-chat accuracy averaged over seven target models; SkillOpt is best or tied-best in every panel.
+        </figcaption>
+      </figure>
 
     </section>
 
